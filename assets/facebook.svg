@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
+	<defs>
+		<image width="35" height="35" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAENUlEQVRYR82YX2xTZRTAz/lakCUsDPRBNJLtxfiCDCHxTwB5JUGFB/4ZMHW004yWXTSsnT7QF13vNKRbSwNrkYY9mImJGIw+OjIlvJhM9yQPbkEjJsY4Q2OFtd/hfHe9zV3Xtd9tZ9hNbnpz+53z/e75zjnfOR/CCrrQDUtX0HzCi/QKAe5kuc18b+K7raRjln9v8z2FQBMFwmufJMO/u9GvBeMPmS8IAIMADhHQlyBxHFBOFgowkz3fP6Mm9L090O71QjuQ6ARBuxHwNVY+JgHimUT4pg5UTZgDBz7ztD0+HQeiYwwRL+TuxbPZqLJA3cvni7Z51z5iMJQBiKOzf3QYV64cLNYSXBLG3/vRsyjlZSK2QO6eoQtROZkF1bomy1DtJMQbmaHTPy0FVBWm+2RsBxF+RRKimXPheF0zaAzwnzANFBBFpL0jw5HvqoksgukOxjYT4gSANNKJ/qzGPNpDAqEBH4CII9HOkWRkqlJwEUwgZP7AFhldLotUTliy0LF0IrytJkzgZOwsSdqQSfbzF/x/lz8Uu4oIv6SHI+84Zylb5q1QbIskuD6X+6+9UWfVxVdOvWrtmhmB8PKFRORHW64MEwjFLhLRr2yVqK5SNa77xOBzhDLF4fu8LcdLUDd/+YMD7Mz4VDoROb4ApqvPbPXkYXbubv5RN1bpfvfjx+h+8RYrW+/8AB0YyzqtLX+tKubXpVLRnJK3vsAfGjzC0XMok4jsc2WV4OApQjpbkvmcM/T36pkzrlY6UL7D0TWWSfR96oRJgaRbbiOIHZ6zM/ZaMB7cmo73Tbr5GBVZIPBphulxwJg3gOR77C/jOsoCxmCnGscp4DTnjNetZ8LD6IWf1bMuFPvNbkDxIVvyJSfMncKcfNHe9OoBcS7iFVn60vEZJR3o+aCTPN5vGGZjGYaVF1iBtx6E/f9ywVhAjrktB3YNs0zLVJqbbEuWosm8g8XCnnTqfVcO2KwDq2UCj/dbhrFSgw3jyoHLy9VsNLEDI4ohhtmyIkKby4rtDHPUCdNQ0mt2maykh+LrzHDfSBmm0e2gGZjSdvB3keBJu3BvaqNsBkZtlALFMyOJ8GHbBxeUEEXA8cLdfIebzVI3NznHzdfFLdP8bo+zc1iw1aviituQjnQyvL+RSXRlAkHzC47j39hxQ06Zh1V2+rh12VbZujyUgpxbll3VWpaarYokOnMxGRnSNX+tcf6geYbr3lOuWhVbod3EAcH0XC7/ZqNOPV/vtlxiH9nE5YavWouyKJqqfZXd3nK9cJShuL3ND+lCzbe3Lb0MYbA1LlV2AtXmq1s4KyFn489QVyXQuCzKST6R+MfeXNWmxycP64RHdApALprgVS65snxgMOzsAGotpRaMrUAdiQiBe9ncu/id80iEEyn8ye84d6Da+SdWF/+9Zhfauj7nCkZXaaPjVhTMA2w1I0LPnIYkAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="About Us">
+		<g id="Social Media">
+			<use id="Facebook" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+		</g>
+	</g>
+</svg>

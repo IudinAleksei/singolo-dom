@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 11" width="7" height="11">
+	<defs>
+		<image width="7" height="11" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAALCAYAAACzkJeoAAAArklEQVQoU4VQMRKCMBDco3DGjvxAGyTawA/kR/gS+JH8gDQKpMEfxM4ZC84QiKiNV91lb/d2Q7BlWl2AOR97V0SliKMTfQNUAXz0C2Sajt0wUCoOkTIXnSDg2glMIFVCRplXNY0+jwp/mG1Xg5HMTj5uQpG5trl1V7yd+obZuq37EOtnb9nhEgV3PFZbcjl/2ZYl9nHpwOkj5tsEJeJd6qIs9psNENgIQyakvI3vLzHuVj+WraikAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Get a Quote">
+		<g id="Contact Information">
+			<use id="location" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+		</g>
+	</g>
+</svg>
