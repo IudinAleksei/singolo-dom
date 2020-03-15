@@ -27,12 +27,25 @@
         <div id="home" class="navigaton-anchor"></div>
 
         <section class="slider">
-            <div class="slider__arrow_left slider__arrow"><img src="assets/chev_left.svg"></div>
-            <div class="slider__vertical-iphone"><img src="assets/iPhone Vertical.png"></div>
-            <div class="slider__horizontal-iphone"><img src="assets/iPhone Horizontal.png"></div>
-            <div class="slider__arrow_right slider__arrow"><img src="assets/chev_right.svg"></div>
+            <div class="slider__control_left slider__control"><img class="slider__arrow_left slider__arrow" src="assets/chev_left.svg"></div>
+            <div class="slider__control_right slider__control"><img class="slider__arrow_right slider__arrow" src="assets/chev_right.svg"></div>
+            <div class="slide_container">
+                <div class="slide active">
+                    <div class="slide-1">
+                        <img class="iphone" src="assets/Slide-1.png">
+                        <img class="home-button" src="assets/Home.png">
+                        <img class="iphone-display" src="assets/phone-vertical-display.png">
+                        <img class="home-button home-button_horizontal" src="assets/Home.png">
+                        <img class="iphone-display iphone-display_horizontal" src="assets/phone-horizontal-display.png">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-2">
+                        <img class="iphone" src="assets/Slide-2.png">
+                    </div>
+                </div>
+            </div>
         </section>
-
 
         <div id="services" class="navigaton-anchor"></div>
 
@@ -204,11 +217,11 @@
         <section class="get-a-quote">
             <h2 class="get-a-quote__title">Get a Quote</h2>
             <p class="get-a-quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <form class="get-a-quote__form" action="" method="post">
-                <input class="get-a-quote__form__text-input" type="text" pattern="[A-Za-z]{2,}" placeholder="Name (Required)" required>
-                <input class="get-a-quote__form__text-input" type="email" placeholder="Email (Required)" required>
-                <input class="get-a-quote__form__text-input" type="text" placeholder="Subject">
-                <textarea class="get-a-quote__form_text-area get-a-quote__form__text-input" placeholder="Describe your project in detail..."></textarea>
+            <form class="get-a-quote__form" action="" method="GET">
+                <input class="get-a-quote__form__text-input" type="text" name="Name" pattern="[A-Za-z]{2,}" placeholder="Name (Required)" required>
+                <input class="get-a-quote__form__text-input" type="email" name="Email" placeholder="Email (Required)" required>
+                <input class="get-a-quote__form__text-input" type="text" name="Subject" placeholder="Subject">
+                <textarea class="get-a-quote__form_text-area get-a-quote__form__text-input" name="Text" placeholder="Describe your project in detail..."></textarea>
                 <input class="get-a-quote__form__button" type="submit" value="Submit">
             </form>
 
