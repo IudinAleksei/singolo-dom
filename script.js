@@ -112,11 +112,10 @@ const addTagClickHandler = () => {
 
         if (e.target.classList.contains('gallery-selector__button')) {
             let clickedTag = e.target;
-            let gallery = document.querySelector('.gallery');
-            gallery.innerHTML = '';
+            let galleryElements = document.getElementsByClassName('gallery__element');
+            galleryElements[galleryElements.length - 1].after(galleryElements[0]);
             removeSelectedTag();
             selectClickedTag(clickedTag);
-            galleryElementGenerator(clickedTag.innerHTML);
         }
     })
 }
