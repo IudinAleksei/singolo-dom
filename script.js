@@ -1,11 +1,13 @@
 window.onload = function() {
 
     addNavigationClickHandler();
+    addNavigationScrollHandler();
     addTagClickHandler();
     addGalleryClickHandler();
     addFormSubmitHandler();
     addHomeButtonHandler();
     addSliderClickHandler();
+    addModalWindowButtonHandler();
 
 
 }
@@ -13,14 +15,43 @@ window.onload = function() {
 // Navigation
 const addNavigationClickHandler = () => {
     document.querySelector('.header-navigation').addEventListener('click', (e) => {
-
         if (e.target.classList.contains('header-navigation__item')) {
+            e.preventDefault();
             let clickedNavItem = e.target;
-
-            removeSelectedNavigationItem();
-            selectClickedNavigationItem(clickedNavItem);
+            let clickedHref = clickedNavItem.getAttribute('href').slice(1);
+            let headerHeight = document.querySelector('.page-header').offsetHeight;
+            let elementScroll = document.getElementById(clickedHref).nextElementSibling.offsetTop - headerHeight;
+            let startAnimate = Date.now();
+            let startYScroll = window.pageYOffset;
+            let startYDistance = elementScroll - startYScroll;
+            let timer = setInterval(() => {
+                let timePassed = Date.now() - startAnimate;
+                if (timePassed > 315) {
+                    clearInterval(timer);
+                    window.scrollTo(0, elementScroll);
+                    return
+                }
+                window.scrollTo(0, startYScroll + startYDistance * timePassed / 300);
+            }, 20)
         }
     })
+}
+
+const addNavigationScrollHandler = () => {
+    let currentNodeId = '';
+    document.addEventListener('scroll', (e) => {
+        let anchors = document.querySelectorAll('.navigaton-anchor');
+        let headerHeight = document.querySelector('.page-header').offsetHeight;
+        anchors.forEach(item => {
+            if ((window.pageYOffset + headerHeight) >= item.nextElementSibling.offsetTop && (window.pageYOffset + headerHeight) < (item.nextElementSibling.offsetTop + item.nextElementSibling.offsetHeight) && currentNodeId != item.id) {
+                currentNodeId = item.id;
+                let navItem = document.querySelector(`[href="#${item.id}"]`);
+                removeSelectedNavigationItem();
+                selectClickedNavigationItem(navItem);
+            }
+
+        })
+    });
 }
 
 const removeSelectedNavigationItem = () => {
@@ -164,9 +195,22 @@ const addFormSubmitHandler = () => {
     let form = document.querySelector('.get-a-quote__form');
     form.addEventListener('submit', e => {
         e.preventDefault();
-        let messageText = 'Письмо отправлено\n';
-        messageText += (form.Subject.value != '') ? 'Тема: ' + form.Subject.value + '\n' : 'Без темы' + '\n';
-        messageText += (form.Text.value != '') ? 'Описание: ' + form.Text.value + '\n' : 'Без описания' + '\n';
-        alert(messageText);
+        document.querySelector('.modal-window__subject').innerHTML = (form.Subject.value) ? 'Subject: ' + form.Subject.value : 'Without subject';
+        document.querySelector('.modal-window__description').innerHTML = (form.Text.value) ? 'Description: ' + form.Text.value : 'Without description';
+        document.querySelector('.modal-window').classList.add('modal-window_active');
+        document.querySelector('.body-container').classList.add('body-container_hide');
+    })
+}
+
+//Modal window
+const addModalWindowButtonHandler = () => {
+    let form = document.querySelector('.get-a-quote__form');
+    document.querySelector('.modal-window__bitton').addEventListener('click', (e) => {
+        document.querySelector('.modal-window').classList.remove('modal-window_active');
+        document.querySelector('.body-container').classList.remove('body-container_hide');
+        form.Name.value = '';
+        form.Subject.value = '';
+        form.Email.value = '';
+        form.Text.value = '';
     })
 }

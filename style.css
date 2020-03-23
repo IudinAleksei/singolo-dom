@@ -650,3 +650,47 @@ body {
     border-radius: 25%;
     background-color: white;
 }
+
+.modal-window {
+    padding: 15px;
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Lato;
+    font-size: 1em;
+    border: 2px solid grey;
+    background-color: white;
+    z-index: 100;
+    overflow: hidden;
+    hyphens: auto;
+}
+
+.modal-window__subject,
+.modal-window__description {
+    width: 100%;
+    max-height: 20%;
+    overflow: hidden;
+    word-break: break-all;
+    hyphens: auto;
+    text-overflow: ellipsis;
+}
+
+.modal-window_active {
+    display: block;
+}
+
+.modal-window__bitton {
+    position: absolute;
+    width: 15%;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+.body-container_hide {
+    filter: brightness(70%);
+}
