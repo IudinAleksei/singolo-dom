@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
@@ -16,8 +16,9 @@
                 <h1 class="logo__text">SINGOLO</h1>
                 <span class="logo__star">*</span>
             </div>
+            <button class="burger-menu-button"><img src="assets/Burger-menu-icon.svg" alt="menu"></button>
             <nav class="header-navigation">
-                <a href="#home" class="header-navigation__item">home</a>
+                <a href="#home" class="header-navigation__item header-navigation__item_selected">home</a>
                 <a href="#services" class="header-navigation__item">services</a>
                 <a href="#portfolio" class="header-navigation__item">portfolio</a>
                 <a href="#about" class="header-navigation__item">about</a>
@@ -25,231 +26,236 @@
             </nav>
         </header>
 
-        <div id="home" class="navigaton-anchor"></div>
+        <div class="wo_header">
+            <div id="home" class="navigaton-anchor"></div>
 
-        <section class="slider">
-            <div class="slider__control_left slider__control"><img class="slider__arrow_left slider__arrow" src="assets/chev_left.svg"></div>
-            <div class="slider__control_right slider__control"><img class="slider__arrow_right slider__arrow" src="assets/chev_right.svg"></div>
-            <div class="slide_container">
-                <div class="slide active">
-                    <div class="slide-1">
-                        <img class="iphone" src="assets/Slide-1.png">
-                        <img class="home-button" src="assets/Home.png">
-                        <img class="iphone-display" src="assets/phone-vertical-display.png">
-                        <img class="home-button home-button_horizontal" src="assets/Home.png">
-                        <img class="iphone-display iphone-display_horizontal" src="assets/phone-horizontal-display.png">
+            <section class="slider">
+                <div class="slider__control_left slider__control"><img class="slider__arrow_left slider__arrow" src="assets/chev_left.svg"></div>
+                <div class="slider__control_right slider__control"><img class="slider__arrow_right slider__arrow" src="assets/chev_right.svg"></div>
+                <div class="slide_container">
+                    <div class="slide active">
+                        <div class="slide-1">
+                            <img class="iphone" src="assets/Slide-1.png">
+                            <img class="home-button" src="assets/Home.png">
+                            <img class="iphone-display" src="assets/phone-vertical-display.png">
+                            <img class="home-button home-button_horizontal" src="assets/Home.png">
+                            <img class="iphone-display iphone-display_horizontal" src="assets/phone-horizontal-display.png">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-2">
+                            <img class="iphone" src="assets/Slide-2.png">
+                        </div>
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="slide-2">
-                        <img class="iphone" src="assets/Slide-2.png">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="services" class="navigaton-anchor"></div>
-
-        <section class="our-services">
-            <h2 class="our-services__title">Our Services</h2>
-            <p class="our-services__text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-
-            <div class="services-container">
-
-                <div class="services-container__item">
-                    <img class="services-container__item__image" src="assets/pen.svg">
-                    <div class="services-container__item__text">
-                        <h3 class="services-container__item__text__title">Custom Design</h3>
-                        <p class="services-container__item__text__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                    </div>
-                </div>
-
-                <div class="services-container__item">
-                    <img class="services-container__item__image" src="assets/bulb.svg">
-                    <div class="services-container__item__text">
-                        <h3 class="services-container__item__text__title">Inovative Ideas</h3>
-                        <p class="services-container__item__text__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                    </div>
-                </div>
-
-
-
-                <div class="services-container__item">
-                    <img class="services-container__item__image" src="assets/heart.svg">
-                    <div class="services-container__item__text">
-                        <h3 class="services-container__item__text__title">Love Is The Answer</h3>
-                        <p class="services-container__item__text__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                    </div>
-                </div>
-
-
-                <div class="services-container__item">
-                    <img class="services-container__item__image" src="assets/phone.svg">
-                    <div class="services-container__item__text">
-                        <h3 class="services-container__item__text__title">Responsive Layout</h3>
-                        <p class="services-container__item__text__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                    </div>
-                </div>
-
-
-
-                <div class="services-container__item">
-                    <img class="services-container__item__image" src="assets/bubble.svg">
-                    <div class="services-container__item__text">
-                        <h3 class="services-container__item__text__title">24 / 7 Support</h3>
-                        <p class="services-container__item__text__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-                    </div>
-                </div>
-
-
-                <div class="services-container__item">
-                    <img class="services-container__item__image" src="assets/star.svg">
-                    <div class="services-container__item__text">
-                        <h3 class="services-container__item__text__title">Feel Like A Star</h3>
-                        <p class="services-container__item__text__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <div id="portfolio" class="navigaton-anchor"></div>
-
-        <section class="portfolio">
-            <h2 class="portfolio__title">Portfolio</h2>
-            <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class="gallery-selector">
-                <a class="gallery-selector__button_selected gallery-selector__button">All</a>
-                <a class="gallery-selector__button">Web Design</a>
-                <a class="gallery-selector__button">Graphic Design</a>
-                <a class="gallery-selector__button">Artwork</a>
-            </div>
-
-            <section class="gallery">
-                <div class="gallery__element">
-                    <img class="gallery__image" src="assets/boat.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/green_girl.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/moon_town.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/robot_heart.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/bacteria.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/boxes.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/robots.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/birds.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/green_monster.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/tape.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/white_monster.png">
-                </div>
-                <div class="gallery__element">
-                    <img src="assets/debris.png">
-                </div>
-
             </section>
-        </section>
 
-        <div id="about" class="navigaton-anchor"></div>
+            <div id="services" class="navigaton-anchor"></div>
 
-        <section class="about-us">
-            <h2 class="about-us__title">About Us</h2>
-            <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <div class="person-container">
-                <div class="person">
-                    <img src="assets/Adam.png">
-                    <h3 class="person__name">Adam Jensen</h3>
-                    <p class="person__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                    <div class="social">
-                        <a href="https://www.facebook.com" target="_blank"><img class="social__icon" src="assets/facebook.svg"></a>
-                        <a href="https://plus.google.com" target="_blank"><img class="social__icon" src="assets/google+.svg"></a>
-                        <a href="https://www.twitter.com" target="_blank"><img class="social__icon" src="assets/twitter.svg"></a>
-                        <a href="https://www.linkedin.com" target="_blank"><img class="social__icon" src="assets/linkedin.svg"></a>
+            <section class="our-services">
+                <h2 class="our-services__title">Our Services</h2>
+                <p class="our-services__text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+
+                <div class="services-container">
+
+                    <div class="services-container__item">
+                        <img class="services-container__item__image" src="assets/pen.svg">
+                        <div class="services-container__item__text">
+                            <h3 class="services-container__item__text__title">Custom Design</h3>
+                            <p class="services-container__item__text__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        </div>
+                    </div>
+
+                    <div class="services-container__item">
+                        <img class="services-container__item__image" src="assets/bulb.svg">
+                        <div class="services-container__item__text">
+                            <h3 class="services-container__item__text__title">Inovative Ideas</h3>
+                            <p class="services-container__item__text__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="services-container__item">
+                        <img class="services-container__item__image" src="assets/heart.svg">
+                        <div class="services-container__item__text">
+                            <h3 class="services-container__item__text__title">Love Is The Answer</h3>
+                            <p class="services-container__item__text__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="services-container__item">
+                        <img class="services-container__item__image" src="assets/phone.svg">
+                        <div class="services-container__item__text">
+                            <h3 class="services-container__item__text__title">Responsive Layout</h3>
+                            <p class="services-container__item__text__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="services-container__item">
+                        <img class="services-container__item__image" src="assets/bubble.svg">
+                        <div class="services-container__item__text">
+                            <h3 class="services-container__item__text__title">24 / 7 Support</h3>
+                            <p class="services-container__item__text__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                        </div>
+                    </div>
+
+
+                    <div class="services-container__item">
+                        <img class="services-container__item__image" src="assets/star.svg">
+                        <div class="services-container__item__text">
+                            <h3 class="services-container__item__text__title">Feel Like A Star</h3>
+                            <p class="services-container__item__text__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div id="portfolio" class="navigaton-anchor"></div>
+
+            <section class="portfolio">
+                <h2 class="portfolio__title">Portfolio</h2>
+                <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <div class="gallery-selector">
+                    <a class="gallery-selector__button_selected gallery-selector__button">All</a>
+                    <a class="gallery-selector__button">Web Design</a>
+                    <a class="gallery-selector__button">Graphic Design</a>
+                    <a class="gallery-selector__button">Artwork</a>
+                </div>
+
+                <section class="gallery">
+                    <div class="gallery__element">
+                        <img class="gallery__image" src="assets/boat.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/green_girl.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/moon_town.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/robot_heart.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/bacteria.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/boxes.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/robots.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/birds.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/green_monster.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/tape.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/white_monster.png">
+                    </div>
+                    <div class="gallery__element">
+                        <img src="assets/debris.png">
+                    </div>
+
+                </section>
+            </section>
+
+            <div id="about" class="navigaton-anchor"></div>
+
+            <section class="about-us">
+                <h2 class="about-us__title">About Us</h2>
+                <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <div class="person-container">
+                    <div class="person">
+                        <img class="person__photo" src="assets/Adam.png">
+                        <h3 class="person__name">Adam Jensen</h3>
+                        <p class="person__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com" target="_blank"><img class="social__icon" src="assets/facebook.svg"></a>
+                            <a href="https://plus.google.com" target="_blank"><img class="social__icon" src="assets/google+.svg"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img class="social__icon" src="assets/twitter.svg"></a>
+                            <a href="https://www.linkedin.com" target="_blank"><img class="social__icon" src="assets/linkedin.svg"></a>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img class="person__photo" src="assets/Desmond.png">
+                        <h3 class="person__name">Desmond Miles</h3>
+                        <p class="person__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com" target="_blank"><img class="social__icon" src="assets/facebook.svg"></a>
+                            <a href="https://plus.google.com" target="_blank"><img class="social__icon" src="assets/google+.svg"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img class="social__icon" src="assets/twitter.svg"></a>
+                            <a href="https://www.linkedin.com" target="_blank"><img class="social__icon" src="assets/linkedin.svg"></a>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img class="person__photo" src="assets/Scolara.png">
+                        <h3 class="person__name">Scolara Visari</h3>
+                        <p class="person__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com" target="_blank"><img class="social__icon" src="assets/facebook.svg"></a>
+                            <a href="https://plus.google.com" target="_blank"><img class="social__icon" src="assets/google+.svg"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img class="social__icon" src="assets/twitter.svg"></a>
+                            <a href="https://www.linkedin.com" target="_blank"><img class="social__icon" src="assets/linkedin.svg"></a>
+                        </div>
                     </div>
                 </div>
-                <div class="person">
-                    <img src="assets/Desmond.png">
-                    <h3 class="person__name">Desmond Miles</h3>
-                    <p class="person__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                    <div class="social">
-                        <a href="https://www.facebook.com" target="_blank"><img class="social__icon" src="assets/facebook.svg"></a>
-                        <a href="https://plus.google.com" target="_blank"><img class="social__icon" src="assets/google+.svg"></a>
-                        <a href="https://www.twitter.com" target="_blank"><img class="social__icon" src="assets/twitter.svg"></a>
-                        <a href="https://www.linkedin.com" target="_blank"><img class="social__icon" src="assets/linkedin.svg"></a>
+            </section>
+
+            <div id="contact" class="navigaton-anchor"></div>
+
+            <section class="get-a-quote">
+                <h2 class="get-a-quote__title">Get a Quote</h2>
+                <p class="get-a-quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <div class="form-and-contact-container">
+                    <form class="get-a-quote__form" action="" method="GET">
+                        <input class="get-a-quote__form__text-input" type="text" name="Name" pattern="[A-Za-z]{2,}" placeholder="Name (Required)" required>
+                        <input class="get-a-quote__form__text-input" type="email" name="Email" placeholder="Email (Required)" required>
+                        <input class="get-a-quote__form__text-input" type="text" name="Subject" placeholder="Subject">
+                        <textarea class="get-a-quote__form_text-area get-a-quote__form__text-input" name="Text" placeholder="Describe your project in detail..."></textarea>
+                        <input class="get-a-quote__form__button" type="submit" value="Submit">
+                    </form>
+
+                    <div class="contact-information">
+                        <h3 class="contact-information__title">Contact Information</h3>
+                        <p class="contact-information__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                        <div class="contact-information__data">
+                            <div class="contact-information__icon">
+                                <img class="contact-information__icon__location" src="assets/location_icon.svg">
+                                <img class="contact-information__icon__phone" src="assets/phone_icon.svg">
+                                <img class="contact-information__icon__mail" src="assets/mail_icon.svg">
+                            </div>
+                            <div class="contact-information__links">
+                                <a href="https://yandex.ru/maps/157/minsk/search/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/?ll=27.727359%2C53.882845&z=10" title="Minsk" target="_blank">Elm St. 14/05 Lost City</a><br>
+                                <a href="tel:03528 331 86 35">03528 331 86 35</a><br>
+                                <a href="mailto:info@singolo.com">info@singolo.com</a><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="person">
-                    <img src="assets/Scolara.png">
-                    <h3 class="person__name">Scolara Visari</h3>
-                    <p class="person__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                    <div class="social">
-                        <a href="https://www.facebook.com" target="_blank"><img class="social__icon" src="assets/facebook.svg"></a>
-                        <a href="https://plus.google.com" target="_blank"><img class="social__icon" src="assets/google+.svg"></a>
-                        <a href="https://www.twitter.com" target="_blank"><img class="social__icon" src="assets/twitter.svg"></a>
-                        <a href="https://www.linkedin.com" target="_blank"><img class="social__icon" src="assets/linkedin.svg"></a>
-                    </div>
+            </section>
+            </section>
+
+            <footer class="page-footer">
+                <div class="copyright">
+                    <span>&copy Copyright 2013</span>
                 </div>
-            </div>
-        </section>
-
-        <div id="contact" class="navigaton-anchor"></div>
-
-        <section class="get-a-quote">
-            <h2 class="get-a-quote__title">Get a Quote</h2>
-            <p class="get-a-quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <form class="get-a-quote__form" action="" method="GET">
-                <input class="get-a-quote__form__text-input" type="text" name="Name" pattern="[A-Za-z]{2,}" placeholder="Name (Required)" required>
-                <input class="get-a-quote__form__text-input" type="email" name="Email" placeholder="Email (Required)" required>
-                <input class="get-a-quote__form__text-input" type="text" name="Subject" placeholder="Subject">
-                <textarea class="get-a-quote__form_text-area get-a-quote__form__text-input" name="Text" placeholder="Describe your project in detail..."></textarea>
-                <input class="get-a-quote__form__button" type="submit" value="Submit">
-            </form>
-
-            <div class="contact-information">
-                <h3 class="contact-information__title">Contact Information</h3>
-                <p class="contact-information__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                <div class="contact-information__data">
-                    <div class="contact-information__icon">
-                        <img class="contact-information__icon__location" src="assets/location_icon.svg">
-                        <img class="contact-information__icon__phone" src="assets/phone_icon.svg">
-                        <img class="contact-information__icon__mail" src="assets/mail_icon.svg">
-                    </div>
-                    <div class="contact-information__links">
-                        <a href="https://yandex.ru/maps/157/minsk/search/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/?ll=27.727359%2C53.882845&z=10" title="Minsk" target="_blank">Elm St. 14/05 Lost City</a><br>
-                        <a href="tel:03528 331 86 35">03528 331 86 35</a><br>
-                        <a href="mailto:info@singolo.com">info@singolo.com</a><br>
-                    </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com" target="_blank"><img class="footer-social__icon" src="assets/facebook.svg"></a>
+                    <a href="https://plus.google.com" target="_blank"><img class="footer-social__icon" src="assets/google+.svg"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img class="footer-social__icon" src="assets/twitter.svg"></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img class="footer-social__icon" src="assets/linkedin.svg"></a>
                 </div>
-            </div>
-        </section>
-
-        <footer class="page-footer">
-            <div class="copyright">
-                <span>&copy Copyright 2013</span>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.facebook.com" target="_blank"><img class="footer-social__icon" src="assets/facebook.svg"></a>
-                <a href="https://plus.google.com" target="_blank"><img class="footer-social__icon" src="assets/google+.svg"></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="footer-social__icon" src="assets/twitter.svg"></a>
-                <a href="https://www.linkedin.com" target="_blank"><img class="footer-social__icon" src="assets/linkedin.svg"></a>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
 
     <div class="modal-window">

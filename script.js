@@ -1,5 +1,4 @@
 window.onload = function() {
-
     addNavigationClickHandler();
     addNavigationScrollHandler();
     addTagClickHandler();
@@ -8,11 +7,22 @@ window.onload = function() {
     addHomeButtonHandler();
     addSliderClickHandler();
     addModalWindowButtonHandler();
-
-
+    addMenuButtonHandler();
 }
 
-// Navigation
+
+//Menu Button
+const addMenuButtonHandler = () => {
+        document.querySelector('.burger-menu-button').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('.burger-menu-button').classList.toggle('burger-menu-button_rotated');
+            document.querySelector('.header-navigation').classList.toggle('header-navigation_visible');
+            document.querySelector('.logo').classList.toggle('logo_menu');
+            document.querySelector('.wo_header').classList.toggle('body-container_hide');
+
+        })
+    }
+    // Navigation
 const addNavigationClickHandler = () => {
     document.querySelector('.header-navigation').addEventListener('click', (e) => {
         if (e.target.classList.contains('header-navigation__item')) {
