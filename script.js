@@ -27,6 +27,10 @@ const addNavigationClickHandler = () => {
     document.querySelector('.header-navigation').addEventListener('click', (e) => {
         if (e.target.classList.contains('header-navigation__item')) {
             e.preventDefault();
+            document.querySelector('.burger-menu-button').classList.remove('burger-menu-button_rotated');
+            document.querySelector('.header-navigation').classList.remove('header-navigation_visible');
+            document.querySelector('.logo').classList.remove('logo_menu');
+            document.querySelector('.wo_header').classList.remove('body-container_hide');
             let clickedNavItem = e.target;
             let clickedHref = clickedNavItem.getAttribute('href').slice(1);
             let headerHeight = document.querySelector('.page-header').offsetHeight;
@@ -154,6 +158,7 @@ const addTagClickHandler = () => {
         if (e.target.classList.contains('gallery-selector__button')) {
             let clickedTag = e.target;
             let galleryElements = document.getElementsByClassName('gallery__element');
+            console.log(galleryElements);
             galleryElements[galleryElements.length - 1].after(galleryElements[0]);
             removeSelectedTag();
             selectClickedTag(clickedTag);
