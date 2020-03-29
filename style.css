@@ -152,7 +152,6 @@ body {
 
 .slider__control:hover {
     cursor: pointer;
-    background-color: rgba(100, 100, 100, 0.3);
 }
 
 .slider__arrow {
@@ -413,6 +412,7 @@ body {
 .gallery__element {
     margin-bottom: 20px;
     width: 23.4%;
+    height: 100%;
 }
 
 .gallery__element:nth-child(n+13) {
@@ -425,9 +425,7 @@ body {
 }
 
 .gallery__element_selected {
-    margin: -5px;
-    border: 5px solid #f06c64;
-    border-radius: 3px;
+    outline: #f06c64 solid 5px;
 }
 
 .about-us {
@@ -726,6 +724,12 @@ body {
 
 .body-container_hide {
     filter: brightness(70%);
+}
+
+@media (min-width: 1020px) {
+    .slider__control:hover {
+        background-color: rgba(100, 100, 100, 0.3);
+    }
 }
 
 @media (max-width: 1019px) {
